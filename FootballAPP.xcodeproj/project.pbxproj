@@ -1,0 +1,555 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		64FD27EF2EA161830002E09D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64FD27E52EA161830002E09D /* AppDelegate.swift */; };
+		64FD27F02EA161830002E09D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64FD27EC2EA161830002E09D /* SceneDelegate.swift */; };
+		64FD27F12EA161830002E09D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64FD27ED2EA161830002E09D /* ViewController.swift */; };
+		64FD27F22EA161830002E09D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64FD27E62EA161830002E09D /* Assets.xcassets */; };
+		64FD27F42EA161830002E09D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64FD27E92EA161830002E09D /* LaunchScreen.storyboard */; };
+		64FD27F52EA161830002E09D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64FD27EB2EA161830002E09D /* Main.storyboard */; };
+		64FD27F92EA161950002E09D /* AppRoot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64FD27F82EA161950002E09D /* AppRoot.swift */; };
+		64FD27FB2EA161A40002E09D /* BallDrill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64FD27FA2EA161A40002E09D /* BallDrill.swift */; };
+		64FD27FD2EA161B00002E09D /* BallDrillsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64FD27FC2EA161B00002E09D /* BallDrillsViewModel.swift */; };
+		64FD27FF2EA161BB0002E09D /* BallDrillCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64FD27FE2EA161BB0002E09D /* BallDrillCardView.swift */; };
+		64FD28012EA161C70002E09D /* BallDrillDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64FD28002EA161C70002E09D /* BallDrillDetailView.swift */; };
+		64FD28032EA161D10002E09D /* BallDrillsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64FD28022EA161D10002E09D /* BallDrillsView.swift */; };
+		64FD28052EA161DC0002E09D /* FocusDrill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64FD28042EA161DC0002E09D /* FocusDrill.swift */; };
+		64FD28072EA161E60002E09D /* MatchColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64FD28062EA161E60002E09D /* MatchColor.swift */; };
+		64FD28092EA161F00002E09D /* DirectionTapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64FD28082EA161F00002E09D /* DirectionTapViewModel.swift */; };
+		64FD280B2EA161FA0002E09D /* TimedTapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64FD280A2EA161FA0002E09D /* TimedTapViewModel.swift */; };
+		64FD280D2EA162040002E09D /* TimerStopViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64FD280C2EA162040002E09D /* TimerStopViewModel.swift */; };
+		64FD280F2EA1620F0002E09D /* ColorMatchDrillView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64FD280E2EA1620F0002E09D /* ColorMatchDrillView.swift */; };
+		64FD28112EA1621B0002E09D /* DirectionTapDrillView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64FD28102EA1621B0002E09D /* DirectionTapDrillView.swift */; };
+		64FD28132EA162270002E09D /* TimedTapDrillView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64FD28122EA162270002E09D /* TimedTapDrillView.swift */; };
+		64FD28152EA162330002E09D /* TimerStopDrillView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64FD28142EA162330002E09D /* TimerStopDrillView.swift */; };
+		64FD28172EA162920002E09D /* DrillCompleteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64FD28162EA162920002E09D /* DrillCompleteView.swift */; };
+		64FD28192EA162A10002E09D /* FocusDrillsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64FD28182EA162A10002E09D /* FocusDrillsView.swift */; };
+		64FD281B2EA162B50002E09D /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64FD281A2EA162B50002E09D /* MainTabView.swift */; };
+		64FD281D2EA162BF0002E09D /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64FD281C2EA162BF0002E09D /* Tab.swift */; };
+		64FD281F2EA162CA0002E09D /* OnboardingPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64FD281E2EA162CA0002E09D /* OnboardingPage.swift */; };
+		64FD28212EA162D40002E09D /* PreloaderRoot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64FD28202EA162D40002E09D /* PreloaderRoot.swift */; };
+		64FD28232EA162E00002E09D /* StatsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64FD28222EA162E00002E09D /* StatsViewModel.swift */; };
+		64FD28252EA162EB0002E09D /* StatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64FD28242EA162EB0002E09D /* StatsView.swift */; };
+		64FD28272EA162F70002E09D /* FieldZone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64FD28262EA162F70002E09D /* FieldZone.swift */; };
+		64FD28292EA163000002E09D /* VisionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64FD28282EA163000002E09D /* VisionViewModel.swift */; };
+		64FD282B2EA1630B0002E09D /* FieldVisionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64FD282A2EA1630B0002E09D /* FieldVisionView.swift */; };
+		64FD282D2EA163160002E09D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64FD282C2EA163160002E09D /* Constants.swift */; };
+		64FD282F2EA1634F0002E09D /* DrillGoalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64FD282E2EA1634F0002E09D /* DrillGoalView.swift */; };
+		64FD28312EA1635A0002E09D /* MainButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64FD28302EA1635A0002E09D /* MainButtonStyle.swift */; };
+		64FD28332EA163640002E09D /* NavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64FD28322EA163640002E09D /* NavBar.swift */; };
+		64FD28352EA163700002E09D /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64FD28342EA163700002E09D /* Color.swift */; };
+		64FD283D2EA163900002E09D /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 64FD283B2EA163900002E09D /* Poppins-Regular.ttf */; };
+		64FD283E2EA163900002E09D /* Montserrat-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 64FD28372EA163900002E09D /* Montserrat-Medium.ttf */; };
+		64FD283F2EA163900002E09D /* Montserrat-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 64FD28362EA163900002E09D /* Montserrat-ExtraBold.ttf */; };
+		64FD28402EA163900002E09D /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 64FD28392EA163900002E09D /* Poppins-Bold.ttf */; };
+		64FD28412EA163900002E09D /* Poppins-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 64FD283C2EA163900002E09D /* Poppins-SemiBold.ttf */; };
+		64FD28422EA163900002E09D /* Poppins-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 64FD283A2EA163900002E09D /* Poppins-Medium.ttf */; };
+		64FD28432EA163900002E09D /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 64FD28382EA163900002E09D /* Montserrat-Regular.ttf */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		64FD27CD2EA161750002E09D /* FootballAPP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FootballAPP.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		64FD27E52EA161830002E09D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		64FD27E62EA161830002E09D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		64FD27E72EA161830002E09D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		64FD27E82EA161830002E09D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		64FD27EA2EA161830002E09D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		64FD27EC2EA161830002E09D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		64FD27ED2EA161830002E09D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		64FD27F82EA161950002E09D /* AppRoot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRoot.swift; sourceTree = "<group>"; };
+		64FD27FA2EA161A40002E09D /* BallDrill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BallDrill.swift; sourceTree = "<group>"; };
+		64FD27FC2EA161B00002E09D /* BallDrillsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BallDrillsViewModel.swift; sourceTree = "<group>"; };
+		64FD27FE2EA161BB0002E09D /* BallDrillCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BallDrillCardView.swift; sourceTree = "<group>"; };
+		64FD28002EA161C70002E09D /* BallDrillDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BallDrillDetailView.swift; sourceTree = "<group>"; };
+		64FD28022EA161D10002E09D /* BallDrillsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BallDrillsView.swift; sourceTree = "<group>"; };
+		64FD28042EA161DC0002E09D /* FocusDrill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusDrill.swift; sourceTree = "<group>"; };
+		64FD28062EA161E60002E09D /* MatchColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchColor.swift; sourceTree = "<group>"; };
+		64FD28082EA161F00002E09D /* DirectionTapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectionTapViewModel.swift; sourceTree = "<group>"; };
+		64FD280A2EA161FA0002E09D /* TimedTapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimedTapViewModel.swift; sourceTree = "<group>"; };
+		64FD280C2EA162040002E09D /* TimerStopViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerStopViewModel.swift; sourceTree = "<group>"; };
+		64FD280E2EA1620F0002E09D /* ColorMatchDrillView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorMatchDrillView.swift; sourceTree = "<group>"; };
+		64FD28102EA1621B0002E09D /* DirectionTapDrillView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectionTapDrillView.swift; sourceTree = "<group>"; };
+		64FD28122EA162270002E09D /* TimedTapDrillView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimedTapDrillView.swift; sourceTree = "<group>"; };
+		64FD28142EA162330002E09D /* TimerStopDrillView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerStopDrillView.swift; sourceTree = "<group>"; };
+		64FD28162EA162920002E09D /* DrillCompleteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrillCompleteView.swift; sourceTree = "<group>"; };
+		64FD28182EA162A10002E09D /* FocusDrillsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusDrillsView.swift; sourceTree = "<group>"; };
+		64FD281A2EA162B50002E09D /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		64FD281C2EA162BF0002E09D /* Tab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab.swift; sourceTree = "<group>"; };
+		64FD281E2EA162CA0002E09D /* OnboardingPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPage.swift; sourceTree = "<group>"; };
+		64FD28202EA162D40002E09D /* PreloaderRoot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreloaderRoot.swift; sourceTree = "<group>"; };
+		64FD28222EA162E00002E09D /* StatsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsViewModel.swift; sourceTree = "<group>"; };
+		64FD28242EA162EB0002E09D /* StatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsView.swift; sourceTree = "<group>"; };
+		64FD28262EA162F70002E09D /* FieldZone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldZone.swift; sourceTree = "<group>"; };
+		64FD28282EA163000002E09D /* VisionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionViewModel.swift; sourceTree = "<group>"; };
+		64FD282A2EA1630B0002E09D /* FieldVisionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldVisionView.swift; sourceTree = "<group>"; };
+		64FD282C2EA163160002E09D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		64FD282E2EA1634F0002E09D /* DrillGoalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrillGoalView.swift; sourceTree = "<group>"; };
+		64FD28302EA1635A0002E09D /* MainButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainButtonStyle.swift; sourceTree = "<group>"; };
+		64FD28322EA163640002E09D /* NavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBar.swift; sourceTree = "<group>"; };
+		64FD28342EA163700002E09D /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		64FD28362EA163900002E09D /* Montserrat-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ExtraBold.ttf"; sourceTree = "<group>"; };
+		64FD28372EA163900002E09D /* Montserrat-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Medium.ttf"; sourceTree = "<group>"; };
+		64FD28382EA163900002E09D /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
+		64FD28392EA163900002E09D /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.ttf"; sourceTree = "<group>"; };
+		64FD283A2EA163900002E09D /* Poppins-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Medium.ttf"; sourceTree = "<group>"; };
+		64FD283B2EA163900002E09D /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Regular.ttf"; sourceTree = "<group>"; };
+		64FD283C2EA163900002E09D /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		64FD27CA2EA161750002E09D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		64FD27C42EA161750002E09D = {
+			isa = PBXGroup;
+			children = (
+				64FD27EE2EA161830002E09D /* FootballAPP */,
+				64FD27CE2EA161750002E09D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		64FD27CE2EA161750002E09D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				64FD27CD2EA161750002E09D /* FootballAPP.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		64FD27EE2EA161830002E09D /* FootballAPP */ = {
+			isa = PBXGroup;
+			children = (
+				64FD27F72EA1618D0002E09D /* MainFolder */,
+				64FD27F62EA161870002E09D /* APP */,
+				64FD27E62EA161830002E09D /* Assets.xcassets */,
+				64FD27E72EA161830002E09D /* Info.plist */,
+				64FD27E92EA161830002E09D /* LaunchScreen.storyboard */,
+				64FD27EB2EA161830002E09D /* Main.storyboard */,
+			);
+			path = FootballAPP;
+			sourceTree = "<group>";
+		};
+		64FD27F62EA161870002E09D /* APP */ = {
+			isa = PBXGroup;
+			children = (
+				64FD27E52EA161830002E09D /* AppDelegate.swift */,
+				64FD27EC2EA161830002E09D /* SceneDelegate.swift */,
+				64FD27ED2EA161830002E09D /* ViewController.swift */,
+			);
+			path = APP;
+			sourceTree = "<group>";
+		};
+		64FD27F72EA1618D0002E09D /* MainFolder */ = {
+			isa = PBXGroup;
+			children = (
+				64FD27F82EA161950002E09D /* AppRoot.swift */,
+				64FD27FA2EA161A40002E09D /* BallDrill.swift */,
+				64FD27FC2EA161B00002E09D /* BallDrillsViewModel.swift */,
+				64FD27FE2EA161BB0002E09D /* BallDrillCardView.swift */,
+				64FD28002EA161C70002E09D /* BallDrillDetailView.swift */,
+				64FD28022EA161D10002E09D /* BallDrillsView.swift */,
+				64FD28042EA161DC0002E09D /* FocusDrill.swift */,
+				64FD28062EA161E60002E09D /* MatchColor.swift */,
+				64FD28082EA161F00002E09D /* DirectionTapViewModel.swift */,
+				64FD280A2EA161FA0002E09D /* TimedTapViewModel.swift */,
+				64FD280C2EA162040002E09D /* TimerStopViewModel.swift */,
+				64FD280E2EA1620F0002E09D /* ColorMatchDrillView.swift */,
+				64FD28102EA1621B0002E09D /* DirectionTapDrillView.swift */,
+				64FD28122EA162270002E09D /* TimedTapDrillView.swift */,
+				64FD28142EA162330002E09D /* TimerStopDrillView.swift */,
+				64FD28162EA162920002E09D /* DrillCompleteView.swift */,
+				64FD28182EA162A10002E09D /* FocusDrillsView.swift */,
+				64FD281A2EA162B50002E09D /* MainTabView.swift */,
+				64FD281C2EA162BF0002E09D /* Tab.swift */,
+				64FD281E2EA162CA0002E09D /* OnboardingPage.swift */,
+				64FD28202EA162D40002E09D /* PreloaderRoot.swift */,
+				64FD28222EA162E00002E09D /* StatsViewModel.swift */,
+				64FD28242EA162EB0002E09D /* StatsView.swift */,
+				64FD28262EA162F70002E09D /* FieldZone.swift */,
+				64FD28282EA163000002E09D /* VisionViewModel.swift */,
+				64FD282A2EA1630B0002E09D /* FieldVisionView.swift */,
+				64FD282C2EA163160002E09D /* Constants.swift */,
+				64FD282E2EA1634F0002E09D /* DrillGoalView.swift */,
+				64FD28302EA1635A0002E09D /* MainButtonStyle.swift */,
+				64FD28322EA163640002E09D /* NavBar.swift */,
+				64FD28342EA163700002E09D /* Color.swift */,
+				64FD28362EA163900002E09D /* Montserrat-ExtraBold.ttf */,
+				64FD28372EA163900002E09D /* Montserrat-Medium.ttf */,
+				64FD28382EA163900002E09D /* Montserrat-Regular.ttf */,
+				64FD28392EA163900002E09D /* Poppins-Bold.ttf */,
+				64FD283A2EA163900002E09D /* Poppins-Medium.ttf */,
+				64FD283B2EA163900002E09D /* Poppins-Regular.ttf */,
+				64FD283C2EA163900002E09D /* Poppins-SemiBold.ttf */,
+			);
+			path = MainFolder;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		64FD27CC2EA161750002E09D /* FootballAPP */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 64FD27E02EA161770002E09D /* Build configuration list for PBXNativeTarget "FootballAPP" */;
+			buildPhases = (
+				64FD27C92EA161750002E09D /* Sources */,
+				64FD27CA2EA161750002E09D /* Frameworks */,
+				64FD27CB2EA161750002E09D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FootballAPP;
+			packageProductDependencies = (
+			);
+			productName = FootballAPP;
+			productReference = 64FD27CD2EA161750002E09D /* FootballAPP.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		64FD27C52EA161750002E09D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1630;
+				LastUpgradeCheck = 1630;
+				TargetAttributes = {
+					64FD27CC2EA161750002E09D = {
+						CreatedOnToolsVersion = 16.3;
+					};
+				};
+			};
+			buildConfigurationList = 64FD27C82EA161750002E09D /* Build configuration list for PBXProject "FootballAPP" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 64FD27C42EA161750002E09D;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 64FD27CE2EA161750002E09D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				64FD27CC2EA161750002E09D /* FootballAPP */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		64FD27CB2EA161750002E09D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64FD27F22EA161830002E09D /* Assets.xcassets in Resources */,
+				64FD27F42EA161830002E09D /* LaunchScreen.storyboard in Resources */,
+				64FD27F52EA161830002E09D /* Main.storyboard in Resources */,
+				64FD283D2EA163900002E09D /* Poppins-Regular.ttf in Resources */,
+				64FD283E2EA163900002E09D /* Montserrat-Medium.ttf in Resources */,
+				64FD283F2EA163900002E09D /* Montserrat-ExtraBold.ttf in Resources */,
+				64FD28402EA163900002E09D /* Poppins-Bold.ttf in Resources */,
+				64FD28412EA163900002E09D /* Poppins-SemiBold.ttf in Resources */,
+				64FD28422EA163900002E09D /* Poppins-Medium.ttf in Resources */,
+				64FD28432EA163900002E09D /* Montserrat-Regular.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		64FD27C92EA161750002E09D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64FD282F2EA1634F0002E09D /* DrillGoalView.swift in Sources */,
+				64FD28232EA162E00002E09D /* StatsViewModel.swift in Sources */,
+				64FD28312EA1635A0002E09D /* MainButtonStyle.swift in Sources */,
+				64FD28212EA162D40002E09D /* PreloaderRoot.swift in Sources */,
+				64FD27FB2EA161A40002E09D /* BallDrill.swift in Sources */,
+				64FD280B2EA161FA0002E09D /* TimedTapViewModel.swift in Sources */,
+				64FD28292EA163000002E09D /* VisionViewModel.swift in Sources */,
+				64FD282D2EA163160002E09D /* Constants.swift in Sources */,
+				64FD27EF2EA161830002E09D /* AppDelegate.swift in Sources */,
+				64FD27F92EA161950002E09D /* AppRoot.swift in Sources */,
+				64FD27FF2EA161BB0002E09D /* BallDrillCardView.swift in Sources */,
+				64FD281D2EA162BF0002E09D /* Tab.swift in Sources */,
+				64FD28092EA161F00002E09D /* DirectionTapViewModel.swift in Sources */,
+				64FD28012EA161C70002E09D /* BallDrillDetailView.swift in Sources */,
+				64FD27F02EA161830002E09D /* SceneDelegate.swift in Sources */,
+				64FD28072EA161E60002E09D /* MatchColor.swift in Sources */,
+				64FD28052EA161DC0002E09D /* FocusDrill.swift in Sources */,
+				64FD280D2EA162040002E09D /* TimerStopViewModel.swift in Sources */,
+				64FD281B2EA162B50002E09D /* MainTabView.swift in Sources */,
+				64FD281F2EA162CA0002E09D /* OnboardingPage.swift in Sources */,
+				64FD28032EA161D10002E09D /* BallDrillsView.swift in Sources */,
+				64FD28352EA163700002E09D /* Color.swift in Sources */,
+				64FD27F12EA161830002E09D /* ViewController.swift in Sources */,
+				64FD28132EA162270002E09D /* TimedTapDrillView.swift in Sources */,
+				64FD28172EA162920002E09D /* DrillCompleteView.swift in Sources */,
+				64FD282B2EA1630B0002E09D /* FieldVisionView.swift in Sources */,
+				64FD27FD2EA161B00002E09D /* BallDrillsViewModel.swift in Sources */,
+				64FD28112EA1621B0002E09D /* DirectionTapDrillView.swift in Sources */,
+				64FD28252EA162EB0002E09D /* StatsView.swift in Sources */,
+				64FD28192EA162A10002E09D /* FocusDrillsView.swift in Sources */,
+				64FD28332EA163640002E09D /* NavBar.swift in Sources */,
+				64FD28272EA162F70002E09D /* FieldZone.swift in Sources */,
+				64FD28152EA162330002E09D /* TimerStopDrillView.swift in Sources */,
+				64FD280F2EA1620F0002E09D /* ColorMatchDrillView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		64FD27E92EA161830002E09D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				64FD27E82EA161830002E09D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		64FD27EB2EA161830002E09D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				64FD27EA2EA161830002E09D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		64FD27E12EA161770002E09D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FootballAPP/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Reflex Lab";
+				INFOPLIST_KEY_NSCameraUsageDescription = "The app requires a camera so you can track your sports performance.";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.NeuroPlayApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		64FD27E22EA161770002E09D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FootballAPP/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Reflex Lab";
+				INFOPLIST_KEY_NSCameraUsageDescription = "The app requires a camera so you can track your sports performance.";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.NeuroPlayApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		64FD27E32EA161770002E09D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = W2Y3YV88F9;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		64FD27E42EA161770002E09D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = W2Y3YV88F9;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		64FD27C82EA161750002E09D /* Build configuration list for PBXProject "FootballAPP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				64FD27E32EA161770002E09D /* Debug */,
+				64FD27E42EA161770002E09D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		64FD27E02EA161770002E09D /* Build configuration list for PBXNativeTarget "FootballAPP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				64FD27E12EA161770002E09D /* Debug */,
+				64FD27E22EA161770002E09D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 64FD27C52EA161750002E09D /* Project object */;
+}
