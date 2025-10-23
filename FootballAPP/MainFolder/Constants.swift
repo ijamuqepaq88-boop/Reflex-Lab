@@ -2,7 +2,7 @@ import Foundation
 
 enum Constants {
     static let appID = "6754282247"
-    static let privacyPolicy = URL(string: "")!
+    static let privacyPolicy = URL(string: "https://sites.google.com/view/reflexlabapp/privacy-policy")!
 }
 
 enum SaveKey {
