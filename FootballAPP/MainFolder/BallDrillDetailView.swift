@@ -67,9 +67,13 @@ struct BallDrillDetailView: View {
             .opacity(viewModel.isTimerRunning ? 1.0 : 0.6)
             
             Button(action: viewModel.startTimer) {
-                Image(.buttonPlay)
+                Image(systemName: "timer")
                     .resizable()
+                    .foregroundStyle(.blue)
+                    .padding()
+                    .background(Circle().foregroundStyle(.white))
                     .frame(width: 57, height: 57)
+
             }
             .opacity(viewModel.isTimerRunning ? 0.6 : 1.0)
             
