@@ -1,5 +1,6 @@
 import SwiftUI
 
+@available(iOS 15.0, *)
 struct DrillCompleteView: View {
     let score: Int
     let onTryAgain: () -> Void
@@ -68,8 +69,4 @@ struct DrillCompleteView: View {
             }
         }
     }
-}
-
-#Preview {
-    DrillCompleteView(score: 123, onTryAgain: {})
 }

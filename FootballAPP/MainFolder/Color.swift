@@ -28,6 +28,7 @@ extension Color {
 }
 
 extension View {
+    @available(iOS 15.0, *)
     func foreground(_ hex: String) -> some View {
         foregroundStyle(Color(hex))
     }
@@ -36,6 +37,7 @@ extension View {
 import SwiftUI
 
 extension Image {
+    @available(iOS 15.0, *)
     func scaleAspectFill(_ alignment: Alignment = .center) -> some View {
         Color.clear
             .frame(maxWidth: .infinity, maxHeight: .infinity)

@@ -1,5 +1,6 @@
 import SwiftUI
 
+@available(iOS 15.0, *)
 struct DirectionTapDrillView: View {
     @StateObject private var viewModel = DirectionTapViewModel()
     
@@ -117,6 +118,4 @@ struct DirectionTapDrillView: View {
     }
 }
 
-#Preview {
-    DirectionTapDrillView()
-}
+

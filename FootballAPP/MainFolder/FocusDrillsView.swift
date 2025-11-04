@@ -1,5 +1,6 @@
 import SwiftUI
 
+@available(iOS 15.0, *)
 struct FocusDrillsView: View {
     @State private var selectedDrillIndex = 0
     @State private var dragOffset: CGFloat = 0
@@ -80,7 +81,3 @@ struct FocusDrillsView: View {
     }
 }
 
-
-#Preview {
-    FocusDrillsView()
-}

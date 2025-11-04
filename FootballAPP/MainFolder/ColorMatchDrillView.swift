@@ -1,5 +1,6 @@
 import SwiftUI
 
+@available(iOS 15.0, *)
 struct ColorMatchDrillView: View {
     @StateObject private var viewModel = ColorMatchViewModel()
 
@@ -122,8 +123,4 @@ struct ColorMatchDrillView: View {
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(Color.mainBg.ignoresSafeArea())
     }
-}
-
-#Preview {
-    ColorMatchDrillView()
 }

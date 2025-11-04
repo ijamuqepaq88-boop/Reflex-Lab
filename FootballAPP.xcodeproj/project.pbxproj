@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0407F0DC2EB8E75D001C21BA /* OneSignalFramework in Frameworks */ = {isa = PBXBuildFile; productRef = 0407F0DB2EB8E75D001C21BA /* OneSignalFramework */; };
+		0407F0DE2EB8E76E001C21BA /* Ghdsfjhg.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0407F0DD2EB8E76D001C21BA /* Ghdsfjhg.swift */; };
+		0407F0E02EB8E778001C21BA /* Tuhsdjfg.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0407F0DF2EB8E777001C21BA /* Tuhsdjfg.swift */; };
+		0407F0E22EB8E783001C21BA /* Rtjgsdfjhgds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0407F0E12EB8E782001C21BA /* Rtjgsdfjhgds.swift */; };
+		0407F0E42EB8E78F001C21BA /* Phsdgcf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0407F0E32EB8E78E001C21BA /* Phsdgcf.swift */; };
 		64FD27EF2EA161830002E09D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64FD27E52EA161830002E09D /* AppDelegate.swift */; };
 		64FD27F02EA161830002E09D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64FD27EC2EA161830002E09D /* SceneDelegate.swift */; };
 		64FD27F12EA161830002E09D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64FD27ED2EA161830002E09D /* ViewController.swift */; };
@@ -54,6 +59,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0407F0DD2EB8E76D001C21BA /* Ghdsfjhg.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ghdsfjhg.swift; sourceTree = "<group>"; };
+		0407F0DF2EB8E777001C21BA /* Tuhsdjfg.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tuhsdjfg.swift; sourceTree = "<group>"; };
+		0407F0E12EB8E782001C21BA /* Rtjgsdfjhgds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rtjgsdfjhgds.swift; sourceTree = "<group>"; };
+		0407F0E32EB8E78E001C21BA /* Phsdgcf.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Phsdgcf.swift; sourceTree = "<group>"; };
+		0407F0E52EB8E79D001C21BA /* FootballAPP.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FootballAPP.entitlements; sourceTree = "<group>"; };
 		64FD27CD2EA161750002E09D /* FootballAPP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FootballAPP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		64FD27E52EA161830002E09D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		64FD27E62EA161830002E09D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -107,6 +117,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0407F0DC2EB8E75D001C21BA /* OneSignalFramework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,6 +143,7 @@
 		64FD27EE2EA161830002E09D /* FootballAPP */ = {
 			isa = PBXGroup;
 			children = (
+				0407F0E52EB8E79D001C21BA /* FootballAPP.entitlements */,
 				64FD27F72EA1618D0002E09D /* MainFolder */,
 				64FD27F62EA161870002E09D /* APP */,
 				64FD27E62EA161830002E09D /* Assets.xcassets */,
@@ -145,6 +157,10 @@
 		64FD27F62EA161870002E09D /* APP */ = {
 			isa = PBXGroup;
 			children = (
+				0407F0E32EB8E78E001C21BA /* Phsdgcf.swift */,
+				0407F0E12EB8E782001C21BA /* Rtjgsdfjhgds.swift */,
+				0407F0DF2EB8E777001C21BA /* Tuhsdjfg.swift */,
+				0407F0DD2EB8E76D001C21BA /* Ghdsfjhg.swift */,
 				64FD27E52EA161830002E09D /* AppDelegate.swift */,
 				64FD27EC2EA161830002E09D /* SceneDelegate.swift */,
 				64FD27ED2EA161830002E09D /* ViewController.swift */,
@@ -214,6 +230,7 @@
 			);
 			name = FootballAPP;
 			packageProductDependencies = (
+				0407F0DB2EB8E75D001C21BA /* OneSignalFramework */,
 			);
 			productName = FootballAPP;
 			productReference = 64FD27CD2EA161750002E09D /* FootballAPP.app */;
@@ -243,6 +260,9 @@
 			);
 			mainGroup = 64FD27C42EA161750002E09D;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				0407F0DA2EB8E75D001C21BA /* XCRemoteSwiftPackageReference "OneSignal-XCFramework" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 64FD27CE2EA161750002E09D /* Products */;
 			projectDirPath = "";
@@ -292,6 +312,7 @@
 				64FD281D2EA162BF0002E09D /* Tab.swift in Sources */,
 				64FD28092EA161F00002E09D /* DirectionTapViewModel.swift in Sources */,
 				64FD28012EA161C70002E09D /* BallDrillDetailView.swift in Sources */,
+				0407F0DE2EB8E76E001C21BA /* Ghdsfjhg.swift in Sources */,
 				64FD27F02EA161830002E09D /* SceneDelegate.swift in Sources */,
 				64FD28072EA161E60002E09D /* MatchColor.swift in Sources */,
 				64FD28052EA161DC0002E09D /* FocusDrill.swift in Sources */,
@@ -303,13 +324,16 @@
 				64FD27F12EA161830002E09D /* ViewController.swift in Sources */,
 				64FD28132EA162270002E09D /* TimedTapDrillView.swift in Sources */,
 				64FD28172EA162920002E09D /* DrillCompleteView.swift in Sources */,
+				0407F0E22EB8E783001C21BA /* Rtjgsdfjhgds.swift in Sources */,
 				64FD282B2EA1630B0002E09D /* FieldVisionView.swift in Sources */,
 				64FD27FD2EA161B00002E09D /* BallDrillsViewModel.swift in Sources */,
+				0407F0E02EB8E778001C21BA /* Tuhsdjfg.swift in Sources */,
 				64FD28112EA1621B0002E09D /* DirectionTapDrillView.swift in Sources */,
 				64FD28252EA162EB0002E09D /* StatsView.swift in Sources */,
 				64FD28192EA162A10002E09D /* FocusDrillsView.swift in Sources */,
 				64FD28332EA163640002E09D /* NavBar.swift in Sources */,
 				64FD28272EA162F70002E09D /* FieldZone.swift in Sources */,
+				0407F0E42EB8E78F001C21BA /* Phsdgcf.swift in Sources */,
 				64FD28152EA162330002E09D /* TimerStopDrillView.swift in Sources */,
 				64FD280F2EA1620F0002E09D /* ColorMatchDrillView.swift in Sources */,
 			);
@@ -342,24 +366,25 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = FootballAPP/FootballAPP.entitlements;
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = FootballAPP/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "Reflex Lab";
+				INFOPLIST_KEY_CFBundleDisplayName = "Reflex Wing";
 				INFOPLIST_KEY_NSCameraUsageDescription = "The app requires a camera so you can track your sports performance.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.2;
+				MARKETING_VERSION = 1.0.3;
 				PRODUCT_BUNDLE_IDENTIFIER = com.NeuroPlayApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -378,24 +403,25 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = FootballAPP/FootballAPP.entitlements;
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = FootballAPP/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "Reflex Lab";
+				INFOPLIST_KEY_CFBundleDisplayName = "Reflex Wing";
 				INFOPLIST_KEY_NSCameraUsageDescription = "The app requires a camera so you can track your sports performance.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.2;
+				MARKETING_VERSION = 1.0.3;
 				PRODUCT_BUNDLE_IDENTIFIER = com.NeuroPlayApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -552,6 +578,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0407F0DA2EB8E75D001C21BA /* XCRemoteSwiftPackageReference "OneSignal-XCFramework" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/OneSignal/OneSignal-XCFramework";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.2.15;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0407F0DB2EB8E75D001C21BA /* OneSignalFramework */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0407F0DA2EB8E75D001C21BA /* XCRemoteSwiftPackageReference "OneSignal-XCFramework" */;
+			productName = OneSignalFramework;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 64FD27C52EA161750002E09D /* Project object */;
 }

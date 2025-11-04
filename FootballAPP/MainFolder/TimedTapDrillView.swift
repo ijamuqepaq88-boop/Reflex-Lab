@@ -1,5 +1,6 @@
 import SwiftUI
 
+@available(iOS 15.0, *)
 struct TimedTapDrillView: View {
     @StateObject private var viewModel = TimedTapViewModel()
     // Environment dismiss is implicitly used by NavBar and DrillCompleteView
@@ -156,10 +157,3 @@ struct TimedTapDrillView: View {
     }
 }
 
-#if DEBUG
-struct TimedTapDrillView_Previews: PreviewProvider {
-    static var previews: some View {
-        TimedTapDrillView()
-    }
-}
-#endif

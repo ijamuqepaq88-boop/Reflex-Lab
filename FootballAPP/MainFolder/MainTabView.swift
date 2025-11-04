@@ -1,5 +1,6 @@
 import SwiftUI
 
+@available(iOS 15.0, *)
 struct MainTabView: View {
     @State private var selectedTab: Tab = .focus
 
@@ -30,6 +31,7 @@ struct MainTabView: View {
     }
 }
 
+@available(iOS 15.0, *)
 struct CustomTabBar: View {
     @Binding var selectedTab: Tab
     
@@ -52,6 +54,7 @@ struct CustomTabBar: View {
     }
 }
 
+@available(iOS 15.0, *)
 struct TabBarItem: View {
     let tab: Tab
     @Binding var selectedTab: Tab
@@ -82,9 +85,4 @@ struct TabBarItem: View {
         }
         .buttonStyle(.plain)
     }
-}
-
-#Preview {
-    MainTabView()
-        .preferredColorScheme(.dark)
 }

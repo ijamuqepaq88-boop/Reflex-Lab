@@ -31,20 +31,24 @@ struct OnboardingView: View {
                     .frame(maxHeight: .infinity)
                     .opacity(imageOpacity)
 
-                VStack(spacing: 20) {
-                    Text(pages[currentPage].title)
-                        .font(.poppins(.bold, size: 24))
-                        .multilineTextAlignment(.center)
-                        .opacity(titleOpacity)
-                    
-                    Text(pages[currentPage].description)
-                        .font(.poppins(.regular, size: 16))
-                        .opacity(0.9 * descriptionOpacity)
-                        .multilineTextAlignment(.center)
+                if #available(iOS 15.0, *) {
+                    VStack(spacing: 20) {
+                        Text(pages[currentPage].title)
+                            .font(.poppins(.bold, size: 24))
+                            .multilineTextAlignment(.center)
+                            .opacity(titleOpacity)
+                        
+                        Text(pages[currentPage].description)
+                            .font(.poppins(.regular, size: 16))
+                            .opacity(0.9 * descriptionOpacity)
+                            .multilineTextAlignment(.center)
+                    }
+                    .foregroundStyle(.white)
+                    .padding(.horizontal, 24)
+                    .padding(.bottom, 35)
+                } else {
+                    // Fallback on earlier versions
                 }
-                .foregroundStyle(.white)
-                .padding(.horizontal, 24)
-                .padding(.bottom, 35)
                 
                 HStack(spacing: 8) {
                     ForEach(0..<pages.count, id: \.self) { index in
@@ -86,11 +90,15 @@ struct OnboardingView: View {
                 Button {
                     showOnboarding = false
                 } label: {
-                    Text("Skip")
-                        .font(.poppins(.medium, size: 14))
-                        .foregroundStyle(.white)
-                        .frame(height: 20)
-                        .opacity(0.7)
+                    if #available(iOS 15.0, *) {
+                        Text("Skip")
+                            .font(.poppins(.medium, size: 14))
+                            .foregroundStyle(.white)
+                            .frame(height: 20)
+                            .opacity(0.7)
+                    } else {
+                        // Fallback on earlier versions
+                    }
                 }
                 .opacity(currentPage == 2 ? 0 : 1)
                 .padding(.bottom, 40)

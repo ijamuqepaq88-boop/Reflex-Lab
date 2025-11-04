@@ -1,5 +1,6 @@
 import SwiftUI
 
+@available(iOS 15.0, *)
 struct StatsView: View {
     @StateObject private var viewModel = StatsViewModel()
     @State private var showingDeleteConfirm = false
@@ -191,8 +192,4 @@ struct StatsView: View {
         let name: String
         let value: String
     }
-}
-
-#Preview {
-    StatsView()
 }

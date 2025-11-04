@@ -5,53 +5,59 @@ struct BallDrillDetailView: View {
     let drill: BallDrill
 
     var body: some View {
-        VStack(spacing: 16) {
-            NavBar(drill.title, showBackButton: true)
-            
-            ScrollView {
-                VStack(alignment: .leading, spacing: 10) {
-                    // Placeholder for large static image or schema
-                    Image(drill.imageName)
-                        .resizable()
-                        .scaledToFit()
-                        .clipShape(RoundedRectangle(cornerRadius: 8))
+        if #available(iOS 15.0, *) {
+            VStack(spacing: 16) {
+                NavBar(drill.title, showBackButton: true)
+                
+                ScrollView {
+                        VStack(alignment: .leading, spacing: 10) {
+                            // Placeholder for large static image or schema
+                            Image(drill.imageName)
+                                .resizable()
+                                .scaledToFit()
+                                .clipShape(RoundedRectangle(cornerRadius: 8))
+                            
+                            Text(drill.title)
+                                .font(.poppins(.bold, size: 16))
+                                .foreground("1F2937")
+                                .padding(.horizontal, 10)
+                            
+                            Text(drill.text)
+                                .font(.poppins(.regular, size: 14))
+                                .foreground("4B5563")
+                                .padding(.horizontal, 10)
+                                .padding(.bottom, 10)
+                            
+                            timerSection
+                                .padding(.horizontal, 6)
+                                .padding(.bottom, 6)
+                        }
+                        .background {
+                            RoundedRectangle(cornerRadius: 8)
+                                .fill(Color("D2E8FF"))
+                        }
+                        .padding(.horizontal, 24)
+                        .padding(.bottom, 30)
                     
-                    Text(drill.title)
-                        .font(.poppins(.bold, size: 16))
-                        .foreground("1F2937")
-                        .padding(.horizontal, 10)
-                    
-                    Text(drill.text)
-                        .font(.poppins(.regular, size: 14))
-                        .foreground("4B5563")
-                        .padding(.horizontal, 10)
-                        .padding(.bottom, 10)
-                    
-                    timerSection
-                        .padding(.horizontal, 6)
-                        .padding(.bottom, 6)
                 }
-                .background {
-                    RoundedRectangle(cornerRadius: 8)
-                        .fill(Color("D2E8FF"))
-                }
-                .padding(.horizontal, 24)
-                .padding(.bottom, 30)
             }
-        }
-        .background {
-            Color("0A4D8C").ignoresSafeArea()
-        }
-        .hideSystemNavBar()
-        .onAppear {
-            viewModel.drillViewed(drill)
-            viewModel.resetTimer() // Reset timer when view appears
-        }
-        .onDisappear {
-            viewModel.addTimerUsage(viewModel.timerValue) // Add used time to stats
+            .background {
+                Color("0A4D8C").ignoresSafeArea()
+            }
+            .hideSystemNavBar()
+            .onAppear {
+                viewModel.drillViewed(drill)
+                viewModel.resetTimer() // Reset timer when view appears
+            }
+            .onDisappear {
+                viewModel.addTimerUsage(viewModel.timerValue) // Add used time to stats
+            }
+        } else {
+            // Fallback on earlier versions
         }
     }
     
+    @available(iOS 15.0, *)
     private var timerSection: some View {
         HStack(spacing: 10) {
             Text(String(format: "%02d:%02d:%02d", viewModel.timerValue / 3600, (viewModel.timerValue % 3600) / 60, viewModel.timerValue % 60))

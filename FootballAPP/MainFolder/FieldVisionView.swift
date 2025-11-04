@@ -1,5 +1,6 @@
 import SwiftUI
 
+@available(iOS 15.0, *)
 struct FieldVisionView: View {
     @StateObject private var viewModel = VisionViewModel()
     
@@ -94,6 +95,7 @@ struct FieldVisionView: View {
     }
 }
 
+@available(iOS 15.0, *)
 private struct ZoneIndicatorView: View {
     let zone: FieldZone
     let isSelected: Bool
@@ -156,8 +158,3 @@ extension FieldZone {
     ]
 }
 
-
-#Preview {
-    FieldVisionView()
-        .background(Color.mainBg)
-}

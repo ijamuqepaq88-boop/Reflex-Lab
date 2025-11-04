@@ -5,29 +5,37 @@ struct AppRoot: View {
     @State private var showPreloader = true
     
     var body: some View {
-        ZStack {
-            NavigationStack {
-                MainTabView()
-            }
-            
-            if showOnboarding {
-                OnboardingView()
-                    .zIndex(1)
-            }
-            
-            if showPreloader {
-                PreloaderRoot()
-                    .zIndex(2)
-                    .onAppear {
-                        DispatchQueue.main.asyncAfter(deadline: .now() + 2.5) {
-                            showPreloader = false
-                        }
+        if #available(iOS 15.0, *) {
+            ZStack {
+                if #available(iOS 16.0, *) {
+                    NavigationStack {
+                        MainTabView()
                     }
+                } else {
+                    // Fallback on earlier versions
+                }
+                
+                if showOnboarding {
+                    OnboardingView()
+                        .zIndex(1)
+                }
+                
+                if showPreloader {
+                    PreloaderRoot()
+                        .zIndex(2)
+                        .onAppear {
+                            DispatchQueue.main.asyncAfter(deadline: .now() + 2.5) {
+                                showPreloader = false
+                            }
+                        }
+                }
             }
+            .dynamicTypeSize(.large)
+            .animation(.default, value: showPreloader)
+            .animation(.default, value: showOnboarding)
+        } else {
+            // Fallback on earlier versions
         }
-        .dynamicTypeSize(.large)
-        .animation(.default, value: showPreloader)
-        .animation(.default, value: showOnboarding)
         
     }
 }

@@ -29,6 +29,7 @@ struct ShapeDisplayItem: Identifiable {
     var isActiveShape: Bool = false
 }
 
+@available(iOS 15.0, *)
 class ColorMatchViewModel: ObservableObject {
     @Published var shapeItems: [ShapeDisplayItem] = []
     

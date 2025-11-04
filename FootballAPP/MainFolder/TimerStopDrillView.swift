@@ -1,5 +1,6 @@
 import SwiftUI
 
+@available(iOS 15.0, *)
 struct TimerStopDrillView: View {
     @StateObject private var viewModel = TimerStopViewModel()
 
@@ -22,6 +23,7 @@ struct TimerStopDrillView: View {
         }
     }
 
+    @available(iOS 15.0, *)
     private var contentView: some View {
         VStack(spacing: 15) {
             NavBar("Timer Stop", showBackButton: true)
@@ -137,8 +139,4 @@ struct CustomProgressView: View {
             .cornerRadius(45.0)
         }
     }
-}
-
-#Preview {
-    TimerStopDrillView()
 }
